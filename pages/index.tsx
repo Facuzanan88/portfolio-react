@@ -144,14 +144,14 @@ export default function Home() {
                 developed by Piki
               </h1>
             </div>
-            <div className="flex items-center justify-center m-5 md:m-10">
+            <div className="flex items-center justify-center m-5 md:m-32">
               <div className="flex items-center justify-center">
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
                   className="cursor-pointer text-2xl dark:text-white"
                 />
               </div>
-              <div>
+              <div className="ml-14">
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
                   href="../public/"
@@ -162,8 +162,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="lg:grid lg:grid-cols-3 lg:justify-center lg:items-center xs:flex xs:flex-col">
-            <div className="flex flex-col text-3xl gap-8 py-3 text-gray-600">
+          <div className="lg:grid lg:grid-cols-3 lg:justify-center lg:items-center sm:grid sm:grid-cols-2">
+            <div className="hidden lg:flex lg:flex-col lg:text-3xl lg:gap-8 lg:py-3 w-10">
               <Link href={""}>
                 <AiFillTwitterCircle className="cursor-pointer" />
               </Link>
@@ -180,8 +180,8 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className="text-center p-10">
-              <h2 className="text-3xl py-2 text-teal-600 font-medium md:text-6xl justify-center">
+            <div className="text-center p-10 w-70">
+              <h2 className="text-3xl py-2 text-teal-600 font-medium md:text-6xl justify-center ">
                 Hola a Todos!
               </h2>
               <h3 className="text-2xl text-gray-800 md:text-xl">
@@ -192,7 +192,7 @@ export default function Home() {
                   Desarrollador Web Full Stack
                 </span>
               </h3>
-              <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center ">
                 <Link
                   href="#contactame"
                   className="group text-white w-fit px-6 py-3 my-2 
@@ -206,7 +206,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 y-80 mt-20 overflow-hidden md:h-96 md:w-96">
+            <div className="relative w-20 mx-auto bg-gradient-to-b from-teal-500 rounded-full w-100 p-100 y-80 mt-20 overflow-hidden md:h-96 md:w-96">
               <Image
                 className="items-center"
                 src={deved}
@@ -424,16 +424,16 @@ export default function Home() {
                   className="block uppercase tracking-wide text-gray-700 dark:text-gray-400 text-xs font-bold mb-2"
                   htmlFor="grid-password"
                 >
-                  Nombre
+                  E-mail
                 </label>
                 <input
                   type="text"
                   name="name"
                   placeholder="Ingrese su nombre"
-                  className="p-2 h-14 bg-transparent w-96 border-2 rounded-md text-white focus:outline-none"
+                  className="p-2  bg-transparent lg:w-96 border-2 rounded-md text-white focus:outline-none sm:w-40"
                 />
               </div>
-              <div className="my-20">
+              <div className="py-5">
                 <label
                   className="block uppercase tracking-wide text-gray-700 dark:text-gray-400 text-xs font-bold mb-2"
                   htmlFor="grid-password"
@@ -442,17 +442,17 @@ export default function Home() {
                 </label>
                 <input
                   type="text"
-                  name="email"
-                  placeholder="Ingrese su email"
-                  className=" h-14 p-2 bg-transparent w-96  border-2 rounded-md text-white focus:outline-none md:mx-5"
+                  name="name"
+                  placeholder="Ingrese su nombre"
+                  className="p-2  bg-transparent lg:w-96 border-2 rounded-md text-white focus:outline-none sm:w-40"
                 />
               </div>
               <div>
                 <label
-                  className="block uppercase tracking-wide text-gray-700 dark:text-gray-400 text-xs font-bold mb-2 md:mx-5"
+                  className="block uppercase tracking-wide text-gray-700 dark:text-gray-400 text-xs font-bold mb-2 sm:mx-20"
                   htmlFor="grid-password"
                 >
-                  Mensaje
+                  E-mail
                 </label>
                 <textarea
                   name="message"
