@@ -479,7 +479,7 @@ export default function Home() {
                   type="text"
                   name="name"
                   placeholder="Ingrese su nombre"
-                  className="p-2 h-20 text-lg text-center font-burtons  bg-transparent lg:w-96 border-2 rounded-md text-white focus:outline-none sm:w-40"
+                  className="p-2 h-20 text-lg text-center font-burtons  bg-transparent lg:w-96 border-2 rounded-md dark:text-white focus:outline-none sm:w-40"
                 />
               </div>
               <div className="py-5">
@@ -493,7 +493,7 @@ export default function Home() {
                   type="text"
                   name="name"
                   placeholder="Ingrese su E-mail"
-                  className="p-2 h-20 text-lg text-center font-burtons  bg-transparent lg:w-96 border-2 rounded-md text-white focus:outline-none sm:w-40"
+                  className="p-2 h-20 text-lg text-center font-burtons  bg-transparent lg:w-96 border-2 rounded-md dark:text-white focus:outline-none sm:w-40"
                 />
               </div>
               <div className="py-5">
@@ -507,7 +507,7 @@ export default function Home() {
                   name="message"
                   placeholder="Ingrese su mensaje"
                   rows={10}
-                  className="p-2 bg-transparent w-96  border-2 rounded-md text-white focus:outline-none  h-40 text-lg text-center font-burtons  lg:w-96  sm:w-40"
+                  className="p-2 bg-transparent w-96  border-2 rounded-md dark:text-white focus:outline-none  h-40 text-lg text-center font-burtons  lg:w-96  sm:w-40"
                 />
               </div>
               <button className="text-slate-700 font-burtons text-3xl bg-gradient-to-b from-gray-800 to-gray-500row px-6 py-3 my-8 w-36 lg:h-14 mx-auto flex rounded-md hover:scale-110 duration-300 cursor-pointer text-right items-center">
