@@ -305,7 +305,7 @@ export default function Home() {
               <p className="text-gray-800 ">React / Node</p>
               <p className="text-gray-800 ">Sequelize / PostgreSQL</p>
 
-              <div className="lg:flex lg:flex-row py-5 gap-5 md:justify-center md:flex-col">
+              <div className="lg:flex lg:flex-row py-5 gap-8 md:justify-center md:flex-col">
                 <div className="mb-8">
                   <a
                     className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-14 py-2 rounded-md"
@@ -349,7 +349,7 @@ export default function Home() {
               <p className="text-gray-800">TypeScript</p>
               <p className="text-gray-800 ">Express / Node</p>
               <p className="text-gray-800 ">Sequelize / mySQL / ChakraUI</p>
-              <div className="lg:flex lg:flex-row py-5 gap-5 md:justify-center md:flex-col">
+              <div className="lg:flex lg:flex-row py-5 gap-8 md:justify-center md:flex-col">
                 <div className="mb-8">
                   <a
                     className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-14 py-2 rounded-md"
@@ -393,7 +393,7 @@ export default function Home() {
               <p className="text-gray-800"> </p>
               <p className="text-gray-800 ">Express/ Node</p>
               <p className="text-gray-800 ">Sequelize / PostgreSQL</p>
-              <div className="lg:flex lg:flex-row py-5 gap-5 md:justify-center md:flex-col">
+              <div className="lg:flex lg:flex-row py-5 gap-8 md:justify-center md:flex-col">
                 <div className="mb-8">
                   <a
                     className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-14 py-2 rounded-md"
