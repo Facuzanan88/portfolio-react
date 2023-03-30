@@ -160,8 +160,8 @@ export default function Home() {
               <div className="ml-14">
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-5 py-3 rounded-lg ml-9"
-                  href="../public/cv.pdf"
-                  download="cv.pdf"
+                  href="https://drive.google.com/drive/folders/12clGK05ki0DU5gWq9z15-UNdATZgvDt6"
+                  target="_blank"
                 >
                   Resume
                 </a>
@@ -492,7 +492,7 @@ export default function Home() {
                 <input
                   type="text"
                   name="name"
-                  placeholder="Ingrese su nombre"
+                  placeholder="Ingrese su E-mail"
                   className="p-2 h-20 text-lg text-center font-burtons  bg-transparent lg:w-96 border-2 rounded-md text-white focus:outline-none sm:w-40"
                 />
               </div>
