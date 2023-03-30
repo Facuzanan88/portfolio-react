@@ -308,7 +308,7 @@ export default function Home() {
               <div className="lg:flex lg:flex-row py-5 gap-5 md:justify-center md:flex-col">
                 <div className="mb-8">
                   <a
-                    className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-20 py-2 rounded-md"
+                    className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-14 py-2 rounded-md"
                     href="https://github.com/Santirbe98/PF-ExoOtaku"
                     target="_blank"
                   >
@@ -317,7 +317,7 @@ export default function Home() {
                 </div>
                 <div>
                   <a
-                    className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-20 py-2 rounded-md "
+                    className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-14 py-2 rounded-md "
                     href="https://pf-exo-otaku.vercel.app/"
                     target="_blank"
                   >
@@ -352,7 +352,7 @@ export default function Home() {
               <div className="lg:flex lg:flex-row py-5 gap-5 md:justify-center md:flex-col">
                 <div className="mb-8">
                   <a
-                    className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-20 py-2 rounded-md"
+                    className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-14 py-2 rounded-md"
                     href="https://github.com/salvaarmanasco/Proyecto-Inmobiliario"
                     target="_blank"
                   >
@@ -361,7 +361,7 @@ export default function Home() {
                 </div>
                 <div>
                   <a
-                    className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-20 py-2 rounded-md "
+                    className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-14 py-2 rounded-md "
                     href=""
                   >
                     Deploy
@@ -396,7 +396,7 @@ export default function Home() {
               <div className="lg:flex lg:flex-row py-5 gap-5 md:justify-center md:flex-col">
                 <div className="mb-8">
                   <a
-                    className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-20 py-2 rounded-md"
+                    className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-14 py-2 rounded-md"
                     href="https://github.com/Facuzanan88/PI-Countries"
                     target="_blank"
                   >
@@ -405,7 +405,7 @@ export default function Home() {
                 </div>
                 <div>
                   <a
-                    className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-20 py-2 rounded-md "
+                    className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-14 py-2 rounded-md "
                     href="https://pi-countries-khaki.vercel.app/"
                     target="_blank"
                   >
