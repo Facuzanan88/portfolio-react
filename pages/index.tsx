@@ -134,6 +134,19 @@ const techs = [
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
+  function handleLinkClick(event: {
+    preventDefault: () => void;
+    currentTarget: { getAttribute: (arg0: string) => any };
+  }) {
+    event.preventDefault(); // Evita que el enlace se transporte automáticamente
+
+    const targetId = event.currentTarget.getAttribute("href"); // Obtiene el ID de la sección objetivo
+
+    document.querySelector(targetId).scrollIntoView({
+      behavior: "smooth", // Desplazamiento suave
+    });
+  }
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -186,17 +199,18 @@ export default function Home() {
                 </h3>
               </div>
               <div className="lg:flex lg:justify-center lg:gap-14 lg:items-center grid justify-center">
-                <Link
+                <a
                   href="#portfolio"
                   className="group text-white w-fit px-6 py-3 my-2 mx-1 
-                        flex items-center rounded-md bg-gradient-to-r
-                        from-cyan-500 to-blue-500 cursor-pointer"
+                flex items-center rounded-md bg-gradient-to-r
+                from-cyan-500 to-blue-500 cursor-pointer"
+                  onClick={handleLinkClick} // Agrega un controlador de eventos de clic
                 >
                   Portfolio
                   <span className="group-hover:rotate-90 duration-300">
                     <MdKeyboardArrowDown size={25} className="ml-1" />
                   </span>
-                </Link>
+                </a>
                 <div className="lg:col-span-3 lg:text-3xl lg:py-3 lg:inline-block ml-4 text-2xl py-3 dark:text-white">
                   <Link
                     href={"https://twitter.com/FacuZanandrea"}
