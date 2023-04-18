@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import { Inter } from "next/font/google";
 
@@ -155,7 +156,144 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-teal-100 px-10 md:px-20 dark:bg-gray-900">
+      <main className="bg-teal-100 px-10  md:px-20 dark:bg-gray-900">
+        <section id="inicio">
+          <nav className="fixed top-0 left-0 right-0 bg-opacity-80  w-5/12 m-auto  bg-gray-900 shadow-lg rounded-b-lg dark:bg-teal-400 z-10">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+              <div className="flex items-center justify-between h-16">
+                <div className="flex items-center">
+                  <div className="flex-shrink-0">
+                    {/* <img
+                      className="h-8 w-8"
+                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                      alt="Workflow"
+                    /> */}
+                    <a className=" font-Tragicastle text-2xl text-white ml-3">
+                      FZ
+                    </a>
+                  </div>
+
+                  <div className="hidden md:block">
+                    <div className="ml-16 flex items-baseline space-x-4">
+                      <a
+                        href="#inicio"
+                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
+                        onClick={handleLinkClick}
+                      >
+                        Inicio
+                      </a>
+                      <a
+                        href="#sobreMi"
+                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                        onClick={handleLinkClick}
+                      >
+                        Sobre mí
+                      </a>
+                      <a
+                        href="#portfolio"
+                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                        onClick={handleLinkClick}
+                      >
+                        Mis Proyectos
+                      </a>
+                      <a
+                        href="#tecnologia"
+                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                        onClick={handleLinkClick}
+                      >
+                        Tecnologias
+                      </a>
+                      <a
+                        href="#contact"
+                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                        onClick={handleLinkClick}
+                      >
+                        Contacto
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="-mr-2 flex md:hidden">
+                  <button
+                    type="button"
+                    className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                    aria-expanded="false"
+                  >
+                    <span className="sr-only">Open main menu</span>
+                    {/* <!-- Heroicon name: menu --> */}
+                    <svg
+                      className="block h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"
+                      ></path>
+                    </svg>
+                    {/* <!-- Heroicon name: x --> */}
+                    <svg
+                      className="hidden h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="md:hidden" id="mobile-menu">
+              <div className="pb-3 px-2 space-y-1">
+                <a
+                  href="#"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Inicio
+                </a>
+                <a
+                  href="#tecnologia"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Tecnología
+                </a>
+                <a
+                  href="#sobre-mi"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Sobre mí
+                </a>
+                <a
+                  href="#testimonios"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Testimonios
+                </a>
+                <a
+                  href="#contacto"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Contacto
+                </a>
+              </div>
+            </div>
+          </nav>
+        </section>
+
         <section className="mb-10">
           <div className="grid sm:grid-cols-1 md:grid-cols-2 dark:text-white">
             <div className="flex justify-center m-5 md:m-10">
@@ -250,7 +388,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        <section id="sobreMi">
           <div>
             <div>
               <h3 className="text-5xl py-6 text-center dark:text-white">
@@ -431,7 +569,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        <section id="tecnologia">
           <div>
             <h3 className="text-5xl py-6 text-center dark:text-white">
               Tecnologias
