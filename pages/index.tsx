@@ -163,56 +163,54 @@ export default function Home() {
       <main className="bg-teal-100 px-10  md:px-20 dark:bg-gray-900">
         <section id="inicio">
           <nav className="3xl:hidden fixed top-0 left-0 right-0 bg-opacity-80  w-6/12 m-auto  bg-gray-900 shadow-lg rounded-b-lg dark:bg-white dark:text-black dark:bg-opacity-50  z-10">
-            <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 ">
-              <div className="flex items-center justify-between h-16">
-                <div className="flex justify-end">
+            <div className="hidden ml-6 md:block">
+              <div className="flex max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 ">
+                <div className="flex items-center justify-between h-16">
                   <div className="flex justify-end">
                     <a className=" font-Tragicastle lg:text-3xl text-2xl  text-white ml-2">
                       FZ
                     </a>
                   </div>
-
-                  <div className="hidden ml-6 md:block">
-                    <div className="ml-10 flex space-x-4 items-center justify-center">
-                      <a
-                        href="#inicio"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 text-md font-semibold"
-                        onClick={handleLinkClick}
-                      >
-                        Inicio
-                      </a>
-                      <a
-                        href="#sobreMi"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 text-md font-semibold "
-                        onClick={handleLinkClick}
-                      >
-                        Sobre mí
-                      </a>
-                      <a
-                        href="#portfolio"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 text-md font-semibold "
-                        onClick={handleLinkClick}
-                      >
-                        Mis Proyectos
-                      </a>
-                      <a
-                        href="#tecnologia"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 text-md font-semibold "
-                        onClick={handleLinkClick}
-                      >
-                        Tecnologias
-                      </a>
-                      <a
-                        href="#contact"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 text-md font-semibold "
-                        onClick={handleLinkClick}
-                      >
-                        Contacto
-                      </a>
-                    </div>
+                  <div className="ml-10 flex space-x-4 items-center justify-center">
+                    <a
+                      href="#inicio"
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 text-md font-semibold"
+                      onClick={handleLinkClick}
+                    >
+                      Inicio
+                    </a>
+                    <a
+                      href="#sobreMi"
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 text-md font-semibold "
+                      onClick={handleLinkClick}
+                    >
+                      Sobre mí
+                    </a>
+                    <a
+                      href="#portfolio"
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 text-md font-semibold "
+                      onClick={handleLinkClick}
+                    >
+                      Mis Proyectos
+                    </a>
+                    <a
+                      href="#tecnologia"
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 text-md font-semibold "
+                      onClick={handleLinkClick}
+                    >
+                      Tecnologias
+                    </a>
+                    <a
+                      href="#contact"
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 text-md font-semibold "
+                      onClick={handleLinkClick}
+                    >
+                      Contacto
+                    </a>
                   </div>
                 </div>
-                {/*  <div className="-mr-2 flex md:hidden">
+              </div>
+              {/*  <div className="-mr-2 flex md:hidden">
                   <button
                     type="button"
                     className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
@@ -225,48 +223,58 @@ export default function Home() {
                     </div>
                   </button>
                 </div> */}
-              </div>
             </div>
-
-            <div className="md:hidden justify-end" id="mobile-menu">
-              <div className="pb-3 px-2 space-y-1 flex column-reverse">
-                <a
-                  href="#inicio"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium justify-end"
-                  onClick={handleLinkClick}
-                >
-                  <AiOutlineHome />
-                </a>
-                <a
-                  href="#sobreMi"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                  onClick={handleLinkClick}
-                >
-                  <GoNote />
-                </a>
-                <a
-                  href="#portfolio"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                  onClick={handleLinkClick}
-                >
-                  <BsBriefcase />
-                </a>
-                <a
-                  href="#tecnologia"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                  onClick={handleLinkClick}
-                >
-                  <FaReact />
-                </a>
-                <a
-                  href="#contact"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                  onClick={handleLinkClick}
-                >
-                  <AiOutlineMail />
-                </a>
+            {/* <div className="flex justify-end">
+              <a className=" font-Tragicastle lg:text-3xl text-2xl  text-white ml-2">
+                FZ
+              </a>
+            </div> */}
+            <nav className="3xl:hidden fixed top-0 left-0 right-0 bg-opacity-80  w-6/12 m-auto  bg-gray-900 shadow-lg rounded-b-lg dark:bg-white dark:text-black dark:bg-opacity-50  z-10">
+              <div className="md:hidden flex justify-end" id="mobile-menu">
+                <div className="flex-shrink-0">
+                  <a className=" font-Tragicastle lg:text-3xl text-2xl  text-white ml-2">
+                    FZ
+                  </a>
+                </div>
+                <div className="pb-3 px-2 space-y-1 flex column-reverse">
+                  <a
+                    href="#inicio"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium justify-end"
+                    onClick={handleLinkClick}
+                  >
+                    <AiOutlineHome />
+                  </a>
+                  <a
+                    href="#sobreMi"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                    onClick={handleLinkClick}
+                  >
+                    <GoNote />
+                  </a>
+                  <a
+                    href="#portfolio"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                    onClick={handleLinkClick}
+                  >
+                    <BsBriefcase />
+                  </a>
+                  <a
+                    href="#tecnologia"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                    onClick={handleLinkClick}
+                  >
+                    <FaReact />
+                  </a>
+                  <a
+                    href="#contact"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                    onClick={handleLinkClick}
+                  >
+                    <AiOutlineMail />
+                  </a>
+                </div>
               </div>
-            </div>
+            </nav>
           </nav>
         </section>
 
