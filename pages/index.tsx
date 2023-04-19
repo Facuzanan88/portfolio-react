@@ -2,13 +2,17 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsBriefcase, BsFillMoonStarsFill } from "react-icons/bs";
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
   AiFillGithub,
+  AiOutlineMail,
+  AiOutlineHome,
 } from "react-icons/ai";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { FaReact } from "react-icons/fa";
+import { GoNote } from "react-icons/go";
 
 import Image from "next/image";
 import deved from "../public/portada.png";
@@ -158,54 +162,49 @@ export default function Home() {
       </Head>
       <main className="bg-teal-100 px-10  md:px-20 dark:bg-gray-900">
         <section id="inicio">
-          <nav className="fixed top-0 left-0 right-0 bg-opacity-80  w-5/12 m-auto  bg-gray-900 shadow-lg rounded-b-lg dark:bg-teal-400 z-10">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+          <nav className="3xl:hidden fixed top-0 left-0 right-0 bg-opacity-80  w-6/12 m-auto  bg-gray-900 shadow-lg rounded-b-lg dark:bg-white dark:text-black dark:bg-opacity-50  z-10">
+            <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 ">
               <div className="flex items-center justify-between h-16">
-                <div className="flex items-center">
-                  <div className="flex-shrink-0">
-                    {/* <img
-                      className="h-8 w-8"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                      alt="Workflow"
-                    /> */}
-                    <a className=" font-Tragicastle text-2xl text-white ml-3">
+                <div className="flex justify-end">
+                  <div className="flex justify-end">
+                    <a className=" font-Tragicastle lg:text-3xl text-2xl  text-white ml-2">
                       FZ
                     </a>
                   </div>
 
-                  <div className="hidden md:block">
-                    <div className="ml-16 flex items-baseline space-x-4">
+                  <div className="hidden ml-6 md:block">
+                    <div className="ml-10 flex space-x-4 items-center justify-center">
                       <a
                         href="#inicio"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
+                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 text-md font-semibold"
                         onClick={handleLinkClick}
                       >
                         Inicio
                       </a>
                       <a
                         href="#sobreMi"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 text-md font-semibold "
                         onClick={handleLinkClick}
                       >
                         Sobre mí
                       </a>
                       <a
                         href="#portfolio"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 text-md font-semibold "
                         onClick={handleLinkClick}
                       >
                         Mis Proyectos
                       </a>
                       <a
                         href="#tecnologia"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 text-md font-semibold "
                         onClick={handleLinkClick}
                       >
                         Tecnologias
                       </a>
                       <a
                         href="#contact"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 text-md font-semibold "
                         onClick={handleLinkClick}
                       >
                         Contacto
@@ -213,81 +212,58 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="-mr-2 flex md:hidden">
+                {/*  <div className="-mr-2 flex md:hidden">
                   <button
                     type="button"
                     className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                     aria-expanded="false"
                   >
-                    <span className="sr-only">Open main menu</span>
-                    {/* <!-- Heroicon name: menu --> */}
-                    <svg
-                      className="block h-6 w-6"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M4 6h16M4 12h16M4 18h16"
-                      ></path>
-                    </svg>
-                    {/* <!-- Heroicon name: x --> */}
-                    <svg
-                      className="hidden h-6 w-6"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M6 18L18 6M6 6l12 12"
-                      ></path>
-                    </svg>
+                    <div className="flex-shrink-0">
+                      <a className=" font-Tragicastle lg:text-3xl text-2xl  text-white ml-2">
+                        FZ
+                      </a>
+                    </div>
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
 
-            <div className="md:hidden" id="mobile-menu">
-              <div className="pb-3 px-2 space-y-1">
+            <div className="md:hidden justify-end" id="mobile-menu">
+              <div className="pb-3 px-2 space-y-1 flex column-reverse">
                 <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  href="#inicio"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium justify-end"
+                  onClick={handleLinkClick}
                 >
-                  Inicio
+                  <AiOutlineHome />
+                </a>
+                <a
+                  href="#sobreMi"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  onClick={handleLinkClick}
+                >
+                  <GoNote />
+                </a>
+                <a
+                  href="#portfolio"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  onClick={handleLinkClick}
+                >
+                  <BsBriefcase />
                 </a>
                 <a
                   href="#tecnologia"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  onClick={handleLinkClick}
                 >
-                  Tecnología
+                  <FaReact />
                 </a>
                 <a
-                  href="#sobre-mi"
+                  href="#contact"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  onClick={handleLinkClick}
                 >
-                  Sobre mí
-                </a>
-                <a
-                  href="#testimonios"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Testimonios
-                </a>
-                <a
-                  href="#contacto"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Contacto
+                  <AiOutlineMail />
                 </a>
               </div>
             </div>
