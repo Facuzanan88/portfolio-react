@@ -15,7 +15,7 @@ import { FaReact } from "react-icons/fa";
 import { GoNote } from "react-icons/go";
 
 import Image from "next/image";
-import deved from "../public/portada.png";
+import deved from "../public/portada2.jpg";
 
 import exoOtaku from "../public/exootaku.png";
 import exoOtakuDark from "../public/exootakusinfondo.png";
@@ -358,15 +358,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="relative w-20 mx-auto bg-gradient-to-b from-teal-500 rounded-full overflow-hidden md:h-96 md:w-96">
+            <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-10 mb-10 overflow-hidden">
               <Image
-                className="items-center"
                 src={deved}
-                alt={""}
-                width={450}
-                height={500}
-                /* layout="fill"
-              objectFit="cover" */
+                fill
+                className=" object-cover"
+                alt="foto-perfil"
               />
             </div>
           </div>
