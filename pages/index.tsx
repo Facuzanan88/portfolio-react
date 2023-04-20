@@ -229,8 +229,11 @@ export default function Home() {
                 FZ
               </a>
             </div> */}
-            <nav className="3xl:hidden fixed top-0 left-0 right-0 bg-opacity-80  w-8/12 lg:w-6/12 m-auto  bg-gray-900 shadow-lg rounded-b-lg dark:bg-white dark:text-black dark:bg-opacity-50  z-10 h-10">
-              <div className="md:hidden flex justify-end" id="mobile-menu">
+            <nav className="3xl:hidden fixed top-0 left-0 right-0 bg-opacity-80  w-8/12 lg:w-6/12 m-auto  bg-gray-900 shadow-lg rounded-b-lg dark:bg-white dark:text-black dark:bg-opacity-50 z-10">
+              <div
+                className="md:hidden flex justify-end h-10 mr-1"
+                id="mobile-menu"
+              >
                 <div className="flex-shrink-0">
                   <a className=" font-Tragicastle lg:text-3xl text-2xl  text-white ml-2">
                     FZ
