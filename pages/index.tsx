@@ -165,7 +165,7 @@ export default function Home() {
           <nav className="3xl:hidden fixed top-0 left-0 right-0 bg-opacity-80  w-6/12 m-auto  bg-gray-900 shadow-lg rounded-b-lg dark:bg-white dark:text-black dark:bg-opacity-50  z-10">
             <div className="hidden ml-6 md:block">
               <div className="flex max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 ">
-                <div className="flex items-center justify-between h-16">
+                <div className="flex items-center justify-between h-12">
                   <div className="flex justify-end">
                     <a className=" font-Tragicastle lg:text-3xl text-2xl  text-white ml-2">
                       FZ
@@ -229,7 +229,7 @@ export default function Home() {
                 FZ
               </a>
             </div> */}
-            <nav className="3xl:hidden fixed top-0 left-0 right-0 bg-opacity-80  w-6/12 m-auto  bg-gray-900 shadow-lg rounded-b-lg dark:bg-white dark:text-black dark:bg-opacity-50  z-10">
+            <nav className="3xl:hidden fixed top-0 left-0 right-0 bg-opacity-80  w-8/12 lg:w-6/12 m-auto  bg-gray-900 shadow-lg rounded-b-lg dark:bg-white dark:text-black dark:bg-opacity-50  z-10 h-10">
               <div className="md:hidden flex justify-end" id="mobile-menu">
                 <div className="flex-shrink-0">
                   <a className=" font-Tragicastle lg:text-3xl text-2xl  text-white ml-2">
@@ -239,35 +239,35 @@ export default function Home() {
                 <div className="pb-3 px-2 space-y-1 flex column-reverse">
                   <a
                     href="#inicio"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium justify-end"
+                    className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium justify-end"
                     onClick={handleLinkClick}
                   >
                     <AiOutlineHome />
                   </a>
                   <a
                     href="#sobreMi"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                    className="text-gray-300  hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                     onClick={handleLinkClick}
                   >
                     <GoNote />
                   </a>
                   <a
                     href="#portfolio"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                    className="text-gray-300  hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                     onClick={handleLinkClick}
                   >
                     <BsBriefcase />
                   </a>
                   <a
                     href="#tecnologia"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                    className="text-gray-300  hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                     onClick={handleLinkClick}
                   >
                     <FaReact />
                   </a>
                   <a
                     href="#contact"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                    className="text-gray-300  hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                     onClick={handleLinkClick}
                   >
                     <AiOutlineMail />
@@ -358,11 +358,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-10 mb-10 overflow-hidden">
+            <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 lg:w-80 lg:h-80 mt-10 mb-10 overflow-hidden">
               <Image
                 src={deved}
                 fill
-                className=" object-cover"
+                className="object-cover"
                 alt="foto-perfil"
               />
             </div>
