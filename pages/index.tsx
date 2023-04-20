@@ -41,8 +41,6 @@ import java from "../assests/icons8-java-629.png";
 import { useState } from "react";
 import Link from "next/link";
 
-import { ItemTypes } from "./api/ItemTypes";
-
 const inter = Inter({ subsets: ["latin"] });
 
 const techs = [
@@ -143,13 +141,6 @@ export default function Home() {
 
   const [showIcons, setShowIcons] = useState(false);
 
-  const [{ isDragging }, drag] = useDrag({
-    item: { type: ItemTypes.BUTTON },
-    collect: (monitor) => ({
-      isDragging: !!monitor.isDragging(),
-    }),
-  });
-
   const handleButtonClick = () => {
     setShowIcons(!showIcons);
   };
@@ -228,17 +219,12 @@ export default function Home() {
             </div>
             <nav className="3xl:hidden fixed top-0 left-0 right-0 bg-opacity-80  w-9/12 lg:w-6/12 m-auto  bg-gray-900 shadow-lg rounded-b-lg dark:bg-white dark:text-black dark:bg-opacity-50 z-10">
               <div
-                className="md:hidden flex justify-end h-10 mr-1"
+                className="md:hidden flex justify-center h-10 mr-1"
                 id="mobile-menu"
               >
-                <div className="flex-shrink-0">
-                  <button
-                    ref={drag} // Asegúrate de adjuntar la referencia de arrastrar a tu elemento
-                    onClick={handleButtonClick}
-                    className="bg-gray-500 hover:bg-gray-600 focus:outline-none"
-                    style={{ opacity: isDragging ? 0.5 : 1 }} // Ajusta la opacidad durante el arrastre si es necesario
-                  >
-                    <a className="font-Tragicastle lg:text-3xl text-2xl text-white dark:text-gray-900 lg:ml-2">
+                <div className="flex-shrink-0 ">
+                  <button onClick={handleButtonClick}>
+                    <a className=" font-Tragicastle lg:text-3xl text-2xl  text-gray-300 hover:text-white dark:text-gray-900 dark:hover:text-white lg:ml-2">
                       FZ
                     </a>
                   </button>
@@ -663,10 +649,4 @@ export default function Home() {
       </main>
     </div>
   );
-}
-function useDrag(arg0: {
-  item: { type: any };
-  collect: (monitor: any) => { isDragging: boolean };
-}): [{ isDragging: any }, any] {
-  throw new Error("Function not implemented.");
 }
