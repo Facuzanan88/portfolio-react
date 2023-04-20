@@ -219,9 +219,7 @@ export default function Home() {
             </div>
             <nav className="3xl:hidden fixed top-0 left-0 right-0 bg-opacity-80  w-9/12 lg:w-6/12 m-auto  bg-gray-900 shadow-lg rounded-b-lg dark:bg-white dark:text-black dark:bg-opacity-50 z-10">
               <div
-                className={`md:hidden flex justify-end h-10 mr-1 transition-transform duration-500 ease-in-out transform ${
-                  showIcons ? "translate-x-0" : "translate-x-full"
-                }`}
+                className="md:hidden flex justify-center h-10 mr-1"
                 id="mobile-menu"
               >
                 <div className="flex-shrink-0 ">
@@ -234,8 +232,8 @@ export default function Home() {
                     </a>
                   </button>
                 </div>
-                <div className="pb-3 px-2 space-y-1 flex column-reverse">
-                  {showIcons && (
+                {showIcons && (
+                  <div className="pb-3 px-2 space-y-1 flex column-reverse duration-500">
                     <>
                       <a
                         href="#inicio"
@@ -273,8 +271,8 @@ export default function Home() {
                         <AiOutlineMail />
                       </a>
                     </>
-                  )}
-                </div>
+                  </div>
+                )}
               </div>
             </nav>
           </nav>
