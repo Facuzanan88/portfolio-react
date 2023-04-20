@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import Draggable from "react-draggable";
 
 import { BsBriefcase, BsFillMoonStarsFill } from "react-icons/bs";
 import {
@@ -41,6 +40,8 @@ import java from "../assests/icons8-java-629.png";
 
 import { useState } from "react";
 import Link from "next/link";
+
+import { ItemTypes } from "./api/ItemTypes";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -142,6 +143,13 @@ export default function Home() {
 
   const [showIcons, setShowIcons] = useState(false);
 
+  const [{ isDragging }, drag] = useDrag({
+    item: { type: ItemTypes.BUTTON },
+    collect: (monitor) => ({
+      isDragging: !!monitor.isDragging(),
+    }),
+  });
+
   const handleButtonClick = () => {
     setShowIcons(!showIcons);
   };
@@ -224,16 +232,16 @@ export default function Home() {
                 id="mobile-menu"
               >
                 <div className="flex-shrink-0">
-                  <Draggable>
-                    <button
-                      onClick={handleButtonClick}
-                      className="bg-gray-500 hover:bg-gray-600 focus:outline-none"
-                    >
-                      <a className="font-Tragicastle lg:text-3xl text-2xl text-white dark:text-gray-900 lg:ml-2">
-                        FZ
-                      </a>
-                    </button>
-                  </Draggable>
+                  <button
+                    ref={drag} // Asegúrate de adjuntar la referencia de arrastrar a tu elemento
+                    onClick={handleButtonClick}
+                    className="bg-gray-500 hover:bg-gray-600 focus:outline-none"
+                    style={{ opacity: isDragging ? 0.5 : 1 }} // Ajusta la opacidad durante el arrastre si es necesario
+                  >
+                    <a className="font-Tragicastle lg:text-3xl text-2xl text-white dark:text-gray-900 lg:ml-2">
+                      FZ
+                    </a>
+                  </button>
                 </div>
                 {showIcons && (
                   <div className="pb-3 px-2 space-y-1 flex column-reverse duration-500">
@@ -655,4 +663,10 @@ export default function Home() {
       </main>
     </div>
   );
+}
+function useDrag(arg0: {
+  item: { type: any };
+  collect: (monitor: any) => { isDragging: boolean };
+}): [{ isDragging: any }, any] {
+  throw new Error("Function not implemented.");
 }
