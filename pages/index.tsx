@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import { Inter } from "next/font/google";
+import Draggable from "react-draggable";
 
 import { BsBriefcase, BsFillMoonStarsFill } from "react-icons/bs";
 import {
@@ -219,15 +220,20 @@ export default function Home() {
             </div>
             <nav className="3xl:hidden fixed top-0 left-0 right-0 bg-opacity-80  w-9/12 lg:w-6/12 m-auto  bg-gray-900 shadow-lg rounded-b-lg dark:bg-white dark:text-black dark:bg-opacity-50 z-10">
               <div
-                className="md:hidden flex justify-center h-10 mr-1"
+                className="md:hidden flex justify-end h-10 mr-1"
                 id="mobile-menu"
               >
-                <div className="flex-shrink-0 ">
-                  <button onClick={handleButtonClick}>
-                    <a className=" font-Tragicastle lg:text-3xl text-2xl  text-white dark:text-gray-900 lg:ml-2">
-                      FZ
-                    </a>
-                  </button>
+                <div className="flex-shrink-0">
+                  <Draggable>
+                    <button
+                      onClick={handleButtonClick}
+                      className="bg-gray-500 hover:bg-gray-600 focus:outline-none"
+                    >
+                      <a className="font-Tragicastle lg:text-3xl text-2xl text-white dark:text-gray-900 lg:ml-2">
+                        FZ
+                      </a>
+                    </button>
+                  </Draggable>
                 </div>
                 {showIcons && (
                   <div className="pb-3 px-2 space-y-1 flex column-reverse duration-500">
