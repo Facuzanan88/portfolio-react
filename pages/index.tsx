@@ -224,7 +224,7 @@ export default function Home() {
               >
                 <div className="flex-shrink-0 ">
                   <button
-                    /*  className="text-white dark:text-gray-900 lg:text-3xl text-2xl bg-gray-900 dark:bg-white dark:bg-opacity-50 px-3 py-2 rounded-md font-medium justify-end" */
+                    className="text-white dark:text-gray-900 lg:text-3xl text-2xl bg-gray-900 dark:bg-white dark:bg-opacity-50 px-3 py-2 rounded-md font-medium justify-end focus:outline-none"
                     onClick={handleButtonClick}
                   >
                     <a className=" font-Tragicastle lg:text-3xl text-2xl  text-white dark:text-gray-900 lg:ml-2">
@@ -237,7 +237,7 @@ export default function Home() {
                     <>
                       <a
                         href="#inicio"
-                        className="text-gray-300 hover:text-white dark:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-base font-medium justify-end"
+                        className="text-gray-300 hover:text-white dark:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-base font-medium"
                         onClick={handleLinkClick}
                       >
                         <AiOutlineHome />
