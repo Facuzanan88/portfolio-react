@@ -223,10 +223,7 @@ export default function Home() {
                 id="mobile-menu"
               >
                 <div className="flex-shrink-0 ">
-                  <button
-                    className="text-white dark:text-gray-900 lg:text-3xl text-2xl bg-gray-900 dark:bg-white dark:bg-opacity-50 px-3 py-2 rounded-md font-medium justify-end focus:outline-none"
-                    onClick={handleButtonClick}
-                  >
+                  <button onClick={handleButtonClick}>
                     <a className=" font-Tragicastle lg:text-3xl text-2xl  text-white dark:text-gray-900 lg:ml-2">
                       FZ
                     </a>
