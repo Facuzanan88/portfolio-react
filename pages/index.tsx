@@ -139,6 +139,12 @@ const techs = [
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
+  const [showIcons, setShowIcons] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowIcons(!showIcons);
+  };
+
   function handleLinkClick(event: {
     preventDefault: () => void;
     currentTarget: { getAttribute: (arg0: string) => any };
@@ -213,50 +219,59 @@ export default function Home() {
             </div>
             <nav className="3xl:hidden fixed top-0 left-0 right-0 bg-opacity-80  w-9/12 lg:w-6/12 m-auto  bg-gray-900 shadow-lg rounded-b-lg dark:bg-white dark:text-black dark:bg-opacity-50 z-10">
               <div
-                className="md:hidden flex justify-end h-10 mr-1"
+                className="md:hidden flex justify-center h-10 mr-1"
                 id="mobile-menu"
               >
-                <div className="flex-shrink-0">
-                  <a className=" font-Tragicastle lg:text-3xl text-2xl  text-white lg:ml-2">
-                    FZ
-                  </a>
+                <div className="flex-shrink-0 ">
+                  <button
+                    /*  className="text-white dark:text-gray-900 lg:text-3xl text-2xl bg-gray-900 dark:bg-white dark:bg-opacity-50 px-3 py-2 rounded-md font-medium justify-end" */
+                    onClick={handleButtonClick}
+                  >
+                    <a className=" font-Tragicastle lg:text-3xl text-2xl  text-white dark:text-gray-900 lg:ml-2">
+                      FZ
+                    </a>
+                  </button>
                 </div>
                 <div className="pb-3 px-2 space-y-1 flex column-reverse">
-                  <a
-                    href="#inicio"
-                    className="text-gray-300 hover:text-white dark:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-base font-medium justify-end"
-                    onClick={handleLinkClick}
-                  >
-                    <AiOutlineHome />
-                  </a>
-                  <a
-                    href="#sobreMi"
-                    className="text-gray-300  hover:text-white dark:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                    onClick={handleLinkClick}
-                  >
-                    <GoNote />
-                  </a>
-                  <a
-                    href="#portfolio"
-                    className="text-gray-300  hover:text-white dark:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                    onClick={handleLinkClick}
-                  >
-                    <BsBriefcase />
-                  </a>
-                  <a
-                    href="#tecnologia"
-                    className="text-gray-300  hover:text-white dark:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                    onClick={handleLinkClick}
-                  >
-                    <FaReact />
-                  </a>
-                  <a
-                    href="#contact"
-                    className="text-gray-300  hover:text-white dark:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                    onClick={handleLinkClick}
-                  >
-                    <AiOutlineMail />
-                  </a>
+                  {showIcons && (
+                    <>
+                      <a
+                        href="#inicio"
+                        className="text-gray-300 hover:text-white dark:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-base font-medium justify-end"
+                        onClick={handleLinkClick}
+                      >
+                        <AiOutlineHome />
+                      </a>
+                      <a
+                        href="#sobreMi"
+                        className="text-gray-300  hover:text-white dark:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                        onClick={handleLinkClick}
+                      >
+                        <GoNote />
+                      </a>
+                      <a
+                        href="#portfolio"
+                        className="text-gray-300  hover:text-white dark:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                        onClick={handleLinkClick}
+                      >
+                        <BsBriefcase />
+                      </a>
+                      <a
+                        href="#tecnologia"
+                        className="text-gray-300  hover:text-white dark:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                        onClick={handleLinkClick}
+                      >
+                        <FaReact />
+                      </a>
+                      <a
+                        href="#contact"
+                        className="text-gray-300  hover:text-white dark:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                        onClick={handleLinkClick}
+                      >
+                        <AiOutlineMail />
+                      </a>
+                    </>
+                  )}
                 </div>
               </div>
             </nav>
