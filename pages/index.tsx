@@ -224,7 +224,7 @@ export default function Home() {
               >
                 <div className="flex-shrink-0 ">
                   <button onClick={handleButtonClick}>
-                    <a className=" font-Tragicastle lg:text-3xl text-2xl  text-gray-300 hover:text-white dark:text-gray-900 dark:hover:text-white lg:ml-2">
+                    <a className=" font-Tragicastle lg:text-3xl text-2xl  text-white hover:text-white dark:text-gray-900  lg:ml-2">
                       FZ
                     </a>
                   </button>
