@@ -15,7 +15,7 @@ import { FaReact } from "react-icons/fa";
 import { GoNote } from "react-icons/go";
 
 import Image from "next/image";
-import deved from "../public/portada2.jpg";
+import deved from "../public/portada.png";
 
 import exoOtaku from "../public/exootaku.png";
 import exoOtakuDark from "../public/exootakusinfondo.png";
@@ -359,7 +359,7 @@ export default function Home() {
               <Image
                 src={deved}
                 fill
-                className="object-cover"
+                className="object-cover ml-5"
                 alt="foto-perfil"
               />
             </div>
