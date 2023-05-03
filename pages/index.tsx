@@ -95,7 +95,7 @@ const techs = [
   {
     id: 9,
     src: tw,
-    title: "tailwild",
+    title: "tailwind",
     style: "shadow-blue-700 dark:shadow-gray-300",
   },
   {
