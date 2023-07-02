@@ -180,12 +180,12 @@ export default function Home() {
       </Head>
       <main className="bg-teal-100 px-10  md:px-20 dark:bg-gray-900">
         <section id="inicio">
-          <nav className="3xl:hidden fixed top-0 left-0 right-0 bg-opacity-80  w-6/12 m-auto  bg-gray-900 shadow-lg rounded-b-lg dark:bg-white dark:text-black dark:bg-opacity-50  z-10">
+          <nav className=" 3xl:hidden fixed top-0 left-0 right-0 bg-opacity-80  w-6/12 m-auto  bg-gray-900 shadow-lg rounded-b-lg dark:bg-white dark:text-black dark:bg-opacity-50  z-10">
             <div className="hidden ml-6 md:block">
-              <div className="flex max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 ">
+              <div className="flex max-w-7xl mx-auto px-5">
                 <div className="flex items-center justify-between h-12">
                   <div className="flex justify-end">
-                    <a className=" font-Tragicastle lg:text-3xl text-2xl  text-white ml-2 dark:text-gray-900">
+                    <a className=" font-Tragicastle lg:text-3xl text-2xl text-teal-100 ml-2 dark:text-gray-900">
                       FZ
                     </a>
                   </div>
@@ -235,8 +235,11 @@ export default function Home() {
                 id="mobile-menu"
               >
                 <div className="flex-shrink-0 ">
-                  <button onClick={handleButtonClick}>
-                    <a className=" font-Tragicastle lg:text-3xl text-2xl  text-white hover:text-white dark:text-gray-900  lg:ml-2">
+                  <button
+                    onClick={handleButtonClick}
+                    className="bg-transparent"
+                  >
+                    <a className=" font-Tragicastle lg:text-3xl text-2xl text-gray-300 hover:text-white dark:text-gray-900  lg:ml-2">
                       FZ
                     </a>
                   </button>
@@ -329,7 +332,7 @@ export default function Home() {
                   </span>
                 </h3>
               </div>
-              <div className="lg:flex lg:justify-center lg:gap-14 lg:items-center ml-20">
+              <div className="lg:flex lg:justify-center lg:gap-14 lg:items-center md:flex md:justify-center md:gap-14 md:items-center ml-20">
                 <a
                   href="#portfolio"
                   className="group text-white w-fit px-6 py-3 my-2 mx-1 
