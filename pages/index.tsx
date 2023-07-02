@@ -9,6 +9,7 @@ import {
   AiFillGithub,
   AiOutlineMail,
   AiOutlineHome,
+  AiOutlineWhatsApp,
 } from "react-icons/ai";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { FaReact } from "react-icons/fa";
@@ -156,6 +157,17 @@ export default function Home() {
     document.querySelector(targetId).scrollIntoView({
       behavior: "smooth", // Desplazamiento suave
     });
+  }
+
+  function redirectToWhatsApp() {
+    var phoneNumber = "3454282959";
+    var message = "Hola, estoy interesado en contactarte";
+    var url =
+      "https://api.whatsapp.com/send?phone=" +
+      phoneNumber +
+      "&text=" +
+      encodeURIComponent(message);
+    window.open(url, "_blank");
   }
 
   return (
@@ -317,7 +329,7 @@ export default function Home() {
                   </span>
                 </h3>
               </div>
-              <div className="lg:flex lg:justify-center lg:gap-14 lg:items-center grid justify-center">
+              <div className="lg:flex lg:justify-center lg:gap-14 lg:items-center ml-20">
                 <a
                   href="#portfolio"
                   className="group text-white w-fit px-6 py-3 my-2 mx-1 
@@ -330,27 +342,47 @@ export default function Home() {
                     <MdKeyboardArrowDown size={25} className="ml-1" />
                   </span>
                 </a>
-                <div className="lg:col-span-3 lg:text-3xl lg:py-3 lg:inline-block ml-4 text-2xl py-3 dark:text-white">
+                <div className="lg:col-span-3 lg:text-3xl lg:py-3 lg:inline-block m-auto text-2xl py-3 dark:text-white">
                   <Link
                     href={"https://twitter.com/FacuZanandrea"}
                     target="_blank"
+                    className="pr-5"
                   >
-                    <AiFillTwitterCircle className="cursor-pointer" />
+                    <AiFillTwitterCircle
+                      color="#00acee"
+                      className="cursor-pointer"
+                    />
                   </Link>
                   <Link
                     href={
                       "https://www.linkedin.com/in/facundo-zanandrea-884958247/"
                     }
                     target="_blank"
-                    className="px-5"
+                    className="pr-5"
                   >
-                    <AiFillLinkedin className="cursor-pointer" />
+                    <AiFillLinkedin
+                      color="#0e76a8"
+                      className="cursor-pointer"
+                    />
                   </Link>
                   <Link
                     href={"https://github.com/Facuzanan88/"}
                     target="_blank"
+                    className="pr-5"
                   >
-                    <AiFillGithub className="cursor-pointer" />
+                    <AiFillGithub className="cursor-pointer text-gray-900 dark:text-white" />
+                  </Link>
+                  <Link
+                    href={
+                      "https://api.whatsapp.com/send?phone=5493454282959&text=Hola,%20estoy%20interesado%20en%20contactarte"
+                    }
+                    target="_blank"
+                    className="pr-5"
+                  >
+                    <AiOutlineWhatsApp
+                      color="white"
+                      className=" bg-green-600 cursor-pointer"
+                    />
                   </Link>
                 </div>
               </div>
