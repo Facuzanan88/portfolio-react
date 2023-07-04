@@ -332,20 +332,22 @@ export default function Home() {
                   </span>
                 </h3>
               </div>
-              <div className="lg:flex lg:justify-center lg:gap-14 lg:items-center md:flex md:justify-center md:gap-14 md:items-center ml-20">
-                <a
-                  href="#portfolio"
-                  className="group text-white w-fit px-6 py-3 my-2 mx-1 
+              <div className="lg:flex lg:justify-center lg:items-center lg:gap-14 ml-16">
+                <div className="ml-2">
+                  <a
+                    href="#portfolio"
+                    className="group text-white w-fit px-6 py-3 my-2 mx-1 
                 flex items-center rounded-md bg-gradient-to-r
                 from-cyan-500 to-blue-500 cursor-pointer"
-                  onClick={handleLinkClick} // Agrega un controlador de eventos de clic
-                >
-                  Portfolio
-                  <span className="group-hover:rotate-90 duration-300">
-                    <MdKeyboardArrowDown size={25} className="ml-1" />
-                  </span>
-                </a>
-                <div className="lg:col-span-3 lg:text-3xl lg:py-3 lg:inline-block m-auto text-2xl py-3 dark:text-white">
+                    onClick={handleLinkClick} // Agrega un controlador de eventos de clic
+                  >
+                    Portfolio
+                    <span className="group-hover:rotate-90 duration-300">
+                      <MdKeyboardArrowDown size={25} className="ml-1" />
+                    </span>
+                  </a>
+                </div>
+                <div className="lg:col-span-3 lg:text-3xl lg:py-3 lg:inline-block text-2xl py-3 dark:text-white">
                   <Link
                     href={"https://twitter.com/FacuZanandrea"}
                     target="_blank"
